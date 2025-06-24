@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loyola y Cumbia</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=PT+Serif&family=Tagesschrift&display=swap" rel="stylesheet"/>
+</head>
+<body class="blogbody">
+  <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+  <nav> 
+    <ul class="navegacion1">
+        <li><a href="../publicaciones.html">Publicaciones</a></li>
+        <li><a href="../contacto.html">Contacto </a></li>
+    </ul>
+    <div class="diablo">
+        <a href="../index.html">Diablo Fiel</a>
+    </div>
+    <a href="#" id="abrirVotacion" class="votttt">🔥 Votá sobre estos temas:</a>
+  </nav>
+
+  <img class="blogfoto" src="../Imagenes/blog5.jpg" alt="Kevin y Cumbia" />
+
+  <div class="overlay blog-detalle">
+    <header class="blog-header">
+      <h1>Kevin y Cumbia</h1>
+
+    </header>
+    <article class="blog-content">
+    <p>Lomonaco. Sí, ese mismo. El adicto a la cumbia, el que parecía más cerca de un parlante que de una pelota, hoy es el jugador más determinante del fútbol argentino.</p>
+
+  <p>Con goles, asistencias y una personalidad avasallante, Lomonaco se convirtió en el alma de este Independiente que renació del barro.</p>
+
+  <p>Después de años de sufrimiento, papelones dirigenciales y técnicos sin rumbo, el Rojo volvió a ser protagonista donde tiene que serlo: en la cancha.</p>
+
+  <p>Semifinalista del torneo local, puntero de su grupo en la Copa Sudamericana, y jugando con una identidad clara. Algo que parecía ciencia ficción hace no tanto.</p>
+
+  <p>Y todo esto no es casualidad. Hay un laburo serio detrá y tiene nombre y apellido: JULIO VACCARI. Con su perfil extraño, sus pastitos y sus ideas claras e incambiables, logró ensamblar un equipo que combina talento, intensidad y sangre.</p>
+
+  <p>Pipe Loyola, por ejemplo, se adueñó del mediocampo como pocos otros lo han hecho. Corre, marca, mete centros con veneno. Un avión por la banda. Un tanque por el medio. Una bala en ataque. Nadie termina de entender cuantos pipes hay en cancha a la vez.</p>
+  <p>Y el muchachito Cabral, que llegó de la nada y hoy es un pilar. Con su pie mágico, se asocia con Angulo y hace magia. Un toque, un pase, un golazo.</p>
+  <p>Y no olvidemos a los históricos. Los que siempre están, los que nunca se van. Los que saben lo que es jugar con la camiseta del Rojo. Los que sienten el peso de la historia y lo llevan con orgullo.</p>
+
+  <p>La gente volvió a sonreír. El Libertadores de América vuelve a latir cada fin de semana, con la ilusión intacta y la garganta al rojo vivo.</p>
+
+
+  <p>Lo de Lomonaco es tan brutal que ya hay rumores de Europa. Pero el pibe tiene la cabeza en el club. Sueña con salir campeón. Sueña con la gloria.</p>
+
+  <p>Vaccari lo potencia. Le encontró el lugar justo. No lo ata, lo deja fluir. Y el resultado es fútbol del bueno, con goles y magia.</p>
+
+  <p>El vestuario está unido. Se nota. Hay química, hay hambre, hay revancha contenida. Todos los que alguna vez se rieron, hoy están callados.</p>
+
+  <p>Y ojo, que esto recién empieza. Porque si sigue así, Independiente no solo va por todo este año. Está sembrando para despertar y reclamar lo que siempre fue suyo.</p>
+  <p>El Rey de Copas no se olvida. Y menos en Avellaneda. La historia está escrita, y el Rojo siempre vuelve. Siempre vuelve a ser el protagonista.</p>
+  <p>Aquel bello amor que tan esquivo nos viene siendo hace años, deja de parecer un sueño para acercarse a ser una realidad. La mas bella de las copas, aquella de la cual somos maximos ganadores, nos mira con amor desde lo lejos, esperando por nuestro regreso.</p>
+  <p>Después de tanto dolor, de tantos años oscuros, volvió la esperanza. Volvió el Rojo. Y volvió con fuego en los ojos.</p>  
+    </article>
+  </div>
+
+
+  <div class="votacion-modal" id="modalVotacion" style="display: none;">
+    <div class="votacion-contenido">
+
+      <div id="paso1">
+        <span class="votacion-cerrar" id="cerrarVotacion">&times;</span>
+        <h2>¿Sobre qué tema querés votar?</h2>
+        <button class="boton-votar" data-id="holan_vs_vaccari">Holan vs Vaccari</button>
+        <button class="boton-votar" data-id="top3_boquita">Top 3 contra boquita</button>
+        <button class="boton-votar" data-id="valor_lomonaco">¿Cuánto vale Lomonaco?</button>
+      </div>
+ 
+      <div id="paso2" style="display: none;">
+        <span class="votacion-volver" id="volverVotacion">&larr;</span>
+        <h2 id="tituloTema"></h2>
+        <form id="formVoto">
+          <div id="opcionesVoto">
+       
+          </div>
+          <br>
+          <button type="submit" class="boton-votar">Votar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Lucas Manrique © 2025 — GitHub: ManriquePeralta — Instagram: Luki.Manri
+  </footer>
+
+  <script src="../boton.js"></script>
+  <script src="../js/votacion.js"></script>
+</body>
+</html>

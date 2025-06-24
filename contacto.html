@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="contactost.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+  <button id="menu-toggle" class="hamburger">&#9776;</button>  
+<body>
+
+    <div class="background">
+        <video autoplay muted loop playsinline>
+            <source src="Fondo/fondo.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </div>
+    <nav> 
+      <ul class="navegacion1">
+          <li><a href="publicaciones.html">Publicaciones</a></li>
+          <li><a href="contacto.html">Contacto </a></li>
+          </ul>
+            <div class="diablo">
+              <a href="index.html">Diablo Fiel</a>
+              </div>
+          <a href="#" id="abrirVotacion" class="votttt">🔥 Votá sobre estos temas:</a>
+    </nav>
+<div class="overlay"> 
+  <h1>Se parte de esta familia</h1>
+
+  <form id="formSubscripcion" class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required min="18" max="140">
+
+    <button type="submit">Subscribirme</button>
+  </form>
+
+  <div id="mensaje">Bienvenido. El Infierno está ENCAN7ADOR</div>
+</div>
+  <script>
+    document.getElementById('formSubscripcion').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const edad = document.getElementById('edad').value.trim();
+
+      const datosUsuario = { nombre, email, telefono, edad };
+
+      document.getElementById('mensaje').style.display = 'block';
+
+      this.reset();
+    });
+  </script>
+<script src="js/boton.js"></script>
+<script src="js/votacion.js"></script>
+
+<div class="votacion-modal" id="modalVotacion" style="display: none;">
+  <div class="votacion-contenido">
+
+    <div id="paso1">
+      <span class="votacion-cerrar" id="cerrarVotacion">&times;</span>
+      <h2>¿Sobre qué tema querés votar?</h2>
+      <button class="boton-votar" data-id="holan_vs_vaccari">Holan vs Vaccari</button>
+      <button class="boton-votar" data-id="top3_boquita">Top 3 contra boquita</button>
+      <button class="boton-votar" data-id="valor_lomonaco">¿Cuánto vale Lomonaco?</button>
+    </div>
+
+
+    <div id="paso2" style="display: none;">
+      <span class="votacion-volver" id="volverVotacion">&larr;</span>
+      <h2 id="tituloTema"></h2>
+      <form id="formVoto">
+        <div id="opcionesVoto">
+
+        </div>
+        <br>
+        <button type="submit" class="boton-votar">Votar</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+    <footer>Lucas Manrique © 2025 — GitHub: ManriquePeralta — Instagram: Luki.Manri
+    </footer>
+</body>
+</html>

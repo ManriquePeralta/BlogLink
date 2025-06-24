@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #e48f84;
+    background-color: #260404;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: "Tagesschrift";
+    font-weight: 400;
+}
+
+
+.background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; 
+}
+
+.background video {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    filter: brightness(1);
+}
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+    justify-items: center;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+.overlay {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  animation: slideIn 2s ease-in-out;
+
+}
+
+nav {
+    background-color: #4e0505;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+    font-family: "Tagesschrift";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navegacion1 {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.bloh-overlay h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.bloh-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.navegacion1 li {
+    display: inline-block;
+    margin: 4rem;
+}
+a {
+    text-decoration: none;
+    color:inherit
+}
+.navegacion1 li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    line-height: 3rem;
+}
+
+.navegacion1 li a:hover {
+    color: #ff0000;
+    transition: color 0.3s ease;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #b90202;
+    margin-bottom: 1rem;
+    font-family: "Tagesschrift";
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.blog-card {
+    background: #a40707;
+    border-radius: 20px;
+    max-width: 600px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 4px solid #bb0303cc;
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: scale(1.02);
+}
+
+.blog-card img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: fill;
+    display: block;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #e94a4a;
+}
+
+.content p {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #cea2a2;
+}
+
+.meta a {
+    color: #ee6262;
+    text-decoration: none;
+}
+
+.tags {
+    margin-top: 0.5rem;
+}
+
+.tags span {
+    display: inline-block;
+    background: #c46e6e;
+    color: #dd0000;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background: #4e0505;
+  color: #fbd2ff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    z-index: 1100;
+    display: none;
+    cursor: pointer;
+}
+
+.blog-detalle {
+    margin-top: 6rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.blog-header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    border: 3px solid #a40707;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    color: #e94a4a;
+    font-family: "Tagesschrift";
+    margin-bottom: 0.5rem;
+}
+
+.blog-content {
+    background-color: #a40707;
+    padding: 2rem;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border: 3px solid #bb0303cc;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav.open {
+        transform: translateX(0);
+    }
+
+    .overlay.shifted {
+        margin-left: 60vw;
+    }
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        background-color: #4e0505;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    nav.open {
+        transform: translateX(0);
+    }
+
+    .navegacion1 {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .navegacion1 li {
+        margin: 0;
+    }
+
+    .navegacion1 li a {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .overlay {
+        margin-left: 0; 
+        transition: margin-left 0.3s ease;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .grid-blog {
+        grid-template-rows: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .blog-card {
+        max-width: 90%;
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .tags span {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 0.8rem 0;
+    }
+        .blog-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .blog-header img {
+        max-height: 250px;
+    }
+
+    .blog-content {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .tags span {
+        font-size: 0.6rem;
+    }
+}
+@media (max-width:1150px)  and (min-width: 769px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav.open {
+        transform: translateX(0);
+    }
+
+    .overlay.shifted {
+        margin-left: 50vw;
+    }
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        background-color: #4e0505;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    nav.open {
+        transform: translateX(0);
+    }
+
+    .navegacion1 {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .navegacion1 li {
+        margin: 0;
+    }
+
+    .navegacion1 li a {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .overlay {
+        margin-left: 0; 
+        transition: margin-left 0.3s ease;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .grid-blog {
+        grid-template-rows: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .blog-card {
+        max-width: 90%;
+    }
+
+    .blog-card img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .tags span {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 0.8rem 0;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La banda del rojo</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=PT+Serif&family=Tagesschrift&display=swap" rel="stylesheet"/>
+</head>
+<body class="blogbody">
+  <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+  <nav> 
+    <ul class="navegacion1">
+        <li><a href="../publicaciones.html">Publicaciones</a></li>
+        <li><a href="../contacto.html">Contacto </a></li>
+    </ul>
+    <div class="diablo">
+        <a href="../index.html">Diablo Fiel</a>
+    </div>
+    <a href="#" id="abrirVotacion" class="votttt">🔥 Votá sobre estos temas:</a>
+  </nav>
+
+  <img class="blogfoto" src="../Imagenes/blog3.jpg" alt="La banda del rojo" />
+
+  <div class="overlay blog-detalle">
+    <header class="blog-header">
+      <h1>La banda del rojo</h1>
+    </header>
+    <article class="blog-content">
+  <p>Independiente no es solo historia, copas y gloria. Independiente es también su gente, su hinchada, esa que se planta en todos lados como si estuviera jugando una final. La Banda del Rojo es puro corazón, es aguante, es sentimiento que no se explica, se vive.</p>
+
+  <p>Desde la Doble Visera hasta el Libertadores de América, pasando por mil canchas del país y el continente, los hinchas del Rojo fueron, son y serán el alma del club. No importa si es un clásico, un amistoso o una noche de lluvia: ahí están, con los bombos, las banderas y la garganta rota.</p>
+
+  <p>Y no hablamos de cualquiera. La Banda del Rojo se hizo sentir en Brasil, en Colombia, en Japón... cuando salimos campeones del mundo, cuando volvimos del descenso del alma. Siempre firmes, siempre presentes, como la historia manda.</p>
+
+  <p>En la popular se canta con el corazón, con la historia cargada en la espalda y los colores metidos en la piel. Cada trapo es un juramento, cada canción es una forma de vivir. No es solo alentar, es defender una identidad.</p>
+
+  <p>¿Quién no se emocionó viendo esa marea roja copar el Maracaná? ¿O el Cilindro enmudecido por los cantitos rojos que bajaban desde lo más alto? Esos momentos valen más que mil estadísticas, son gloria en estado puro.</p>
+
+  <p>La Banda del Rojo también está en los barrios, en las paredes pintadas, en los pibes que juegan en la plaza con la 10 del Bocha. Es una pasión que se hereda, que se contagia, que se transmite como un legado sagrado.</p>
+
+  <p>En las malas también estuvimos. Cuando dolía, cuando todo era cuesta arriba, los bombos seguían sonando y las banderas seguían flameando. Porque el hincha del Rojo no abandona, no negocia su amor por el club.</p>
+
+  <p>Y no me vengan con que somos menos, o que no llenamos. Porque cuando hay que estar, estamos. Y cuando hay que copar, copamos. Y si hay que dejar la garganta, la dejamos hasta quedarnos mudos.</p>
+
+  <p>La Banda del Rojo tiene códigos. Respeta la camiseta, defiende al jugador que la transpira, y te hace sentir el rigor si te hacés el distraído. Acá no hay lugar para tibios. O sos del Rojo de verdad o no sos nada.</p>
+
+  <p>En cada clásico, el aliento no se negocia. En cada partido, la tribuna late. Porque el hincha de Independiente no es espectador: es protagonista, es parte de la historia, es fuego puro.</p>
+
+  <p>Y cuando suena el “Vamos los Rojos”, se te eriza la piel. Porque no es solo una canción: es una declaración de principios. Una manera de pararse en el mundo. Un grito que atraviesa generaciones.</p>
+
+  <p>Los viajes, las previas, las caravanas interminables, las noches sin dormir... todo eso es parte del folklore rojo. Es parte del amor que no se apaga, que no se mancha, que no se olvida.</p>
+
+  <p>La Banda del Rojo es pueblo, es lucha, es barrio, es orgullo. No necesitamos slogans marketineros. Nos sobran copas y nos sobra aguante. Y eso se ve, se siente y se canta bien fuerte.</p>
+
+  <p>Porque ser del Rojo es un privilegio. Y ser parte de su hinchada es un acto de fe, de amor y de locura. La Banda del Rojo no se explica: se lleva en el alma. Y eso, amigo, no lo entiende cualquiera.</p>
+
+  <p>Así que si todavía dudás de lo que somos... andá a la popular un domingo a la tarde. Escuchá ese rugido, ese bombo que marca el corazón, esa pasión que desborda. Ahí vas a entender lo que es ser del Rojo.</p>
+
+    </article>
+  </div>
+
+  <footer>
+    Lucas Manrique © 2025 — GitHub: ManriquePeralta — Instagram: Luki.Manri
+  </footer>
+
+  <script src="../boton.js"></script>
+  <script src="../js/votacion.js"></script>
+
+  <div class="votacion-modal" id="modalVotacion" style="display: none;">
+    <div class="votacion-contenido">
+
+      <div id="paso1">
+        <span class="votacion-cerrar" id="cerrarVotacion">&times;</span>
+        <h2>¿Sobre qué tema querés votar?</h2>
+        <button class="boton-votar" data-id="holan_vs_vaccari">Holan vs Vaccari</button>
+        <button class="boton-votar" data-id="top3_boquita">Top 3 contra boquita</button>
+        <button class="boton-votar" data-id="valor_lomonaco">¿Cuánto vale Lomonaco?</button>
+      </div>
+
+      <div id="paso2" style="display: none;">
+        <span class="votacion-volver" id="volverVotacion">&larr;</span>
+        <h2 id="tituloTema"></h2>
+        <form id="formVoto">
+          <div id="opcionesVoto">
+
+          </div>
+          <br>
+          <button type="submit" class="boton-votar">Votar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

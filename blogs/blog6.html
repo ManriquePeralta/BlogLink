@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2017 con el Capitán</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=PT+Serif&family=Tagesschrift&display=swap" rel="stylesheet"/>
+</head>
+<body class="blogbody">
+  <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+  <nav> 
+    <ul class="navegacion1">
+        <li><a href="../publicaciones.html">Publicaciones</a></li>
+        <li><a href="../contacto.html">Contacto </a></li>
+    </ul>
+    <div class="diablo">
+        <a href="../index.html">Diablo Fiel</a>
+    </div>
+    <a href="#" id="abrirVotacion" class="votttt">🔥 Votá sobre estos temas:</a>
+  </nav>
+    <div class="overlay blog-detalle">
+  <img class="blogfoto" src="../Imagenes/blog6.jpg" alt="Familia" />
+  <header class="blog-header">
+    <h1>Rojo de mi Corazón</h1>
+
+  </header>
+  
+  <article class="blog-content">
+    <p>Independiente. Rojo de mi corazón. Futbol. Sangre. Familia.</p>
+    <p>La primera vez que fui a la cancha del Rojo tenia apenas mas de 11 años. Corría el 15 de abril del año 2017. Caminabamos ya por las calles de avellaneda. De la mano llevaba a mi hermanito con sus 5 recien cumplidos y Pablo nos llevaba a ambos.</p>
+    <p>Recuerdo que llegamos temprano, la gente ya estaba llegando, y el olor a choripán y asado invadía el aire. Las calles se llenaban de hinchas con camisetas rojas. Era una fiesta.</p>
+    <p>Compramos las entradas en puerta. El frío azotaba fuertemente Avellaneda, pero el calor de la pasion era el mejor abrigo posible. Bochini Baja. Platea completamente privilegiada desde donde se veía "Mejor que en la tele" segun contaba Pablo.</p>
+    <p>Antes de entrar cenamos ya dentro del estadio. Comimos un paty que vendía un camion al estilo foodtruck, y sinceramente a mis ojos era mayor lujo que cenar en el restaurante mas caro del mundo.</p>
+    <p>Cuando faltaba una hora para el comienzo del partido, finalmente nos sentamos en las butacas, ansiosos por el comienzo de aquel evento tan ansiado. Con las uñas comidas de la ansiedad y todas las preguntas habidas y por haber ya hechas, finalmente la espera terminó.</p>
+    <p>Allí, a pocos metros de mi rostro, ingresaron triunfantes aquellos 11 hombres de los cuales dependía mi alegría. 11 caballeros de armadura roja que entraban al campo de batalla a darlo todo.</p>
+    <p>La noche no podía ser mejor, finalmente estaba allí en el estadio mas hermoso del planeta. Con el comienzo del segundo tiempo llegó el gol de la visita. Estaba un poco desanimado, pero al mirar a la gente cantar con tanta alegría me contagié instantaneamente y volví a sonreir. Poco despues cayó el gol del puma Gigliotti.</p>
+    <p> Mi primer abrazo de Gol en la cancha. Finalmente, todas esas veces que alguien al despedirse dijo "abrazo de gol" cobraron sentido. Un abrazo tan sentido, tan emocional, tan real. Atesoro ese momento en un lugar muy especial de mi corazón.</p>
+    <p>El partido terminó 1-1 pero yo me llevé a casa una victoria. Una felicidad imborrable, que cada vez que voy a la cancha vuelvo a sentir.</p>
+    <p>Allí, cada vez que comienzo a caminar por Belgrano hacia el LDA, siento esa misma emoción y alegría que viví en aquel
+      partido. Ese escalofrío al ver el tan encantador infierno que me espera con sus brazos abiertos, esa pasion que con
+      nada se compara. En las buenas, y en las malas mucho más.</p>
+    </article>
+</div>
+  <footer>
+    Lucas Manrique © 2025 — GitHub: ManriquePeralta — Instagram: Luki.Manri
+  </footer>
+
+  <script src="../boton.js"></script>
+  <script src="../js/votacion.js"></script>
+  <!-- Modal de votación -->
+  <div class="votacion-modal" id="modalVotacion" style="display: none;">
+    <div class="votacion-contenido">
+      <!-- Paso 1: Elegir tema -->
+      <div id="paso1">
+        <span class="votacion-cerrar" id="cerrarVotacion">&times;</span>
+        <h2>¿Sobre qué tema querés votar?</h2>
+        <button class="boton-votar" data-id="holan_vs_vaccari">Holan vs Vaccari</button>
+        <button class="boton-votar" data-id="top3_boquita">Top 3 contra boquita</button>
+        <button class="boton-votar" data-id="valor_lomonaco">¿Cuánto vale Lomonaco?</button>
+      </div>
+      <!-- Paso 2: Elegir opción de votación -->
+      <div id="paso2" style="display: none;">
+        <span class="votacion-volver" id="volverVotacion">&larr;</span>
+        <h2 id="tituloTema"></h2>
+        <form id="formVoto">
+          <div id="opcionesVoto">
+            <!-- Opciones dinámicas aparecerán acá -->
+          </div>
+          <br>
+          <button type="submit" class="boton-votar">Votar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+``` 
